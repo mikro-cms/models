@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+
+const schema = new mongoose.Schema({
+  'page': { type: mongoose.Types.ObjectId, ref: 'page' },
+  'role': { type: mongoose.Types.ObjectId, ref: 'role' },
+  'role_group': String
+});
+
+module.exports = mongoose.model('permission', schema, 'permissions');
