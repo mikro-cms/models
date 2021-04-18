@@ -45,7 +45,7 @@ async function hasBeenMigrated() {
     return false;
   }
 
-  return migrationInfo.migrate_status;
+  return imported.migrationInfo.migrate_status;
 }
 
 /**
