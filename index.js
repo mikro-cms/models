@@ -8,5 +8,6 @@ module.exports = {
   'component': require('./component'),
   'post_label': require('./post_label'),
   'post': require('./post'),
-  'label': require('./label')
+  'label': require('./label'),
+  'migration': require('./migration')
 };
