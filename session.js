@@ -7,6 +7,8 @@ const schema = new mongoose.Schema({
   'ip': String,
   'token': String,
   'user': { type: mongoose.Schema.Types.ObjectId, ref: 'user' }
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('session', schema, 'sessions');

@@ -5,6 +5,8 @@ const modelUser = require('./user');
 
 const schema = new mongoose.Schema({
   'migrate_status': Boolean
+}, {
+  autoCreate: true
 });
 
 const modelMigration = mongoose.model('migration', schema, 'migration');

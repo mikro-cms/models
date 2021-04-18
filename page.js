@@ -10,6 +10,8 @@ const schema = new mongoose.Schema({
   'page_url': String,
   'page_title': String,
   'theme': { type: mongoose.Schema.Types.ObjectId, ref: 'theme' }
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('page', schema, 'pages');

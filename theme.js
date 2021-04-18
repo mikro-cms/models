@@ -11,6 +11,8 @@ const schema = new mongoose.Schema({
   'theme_version': String,
   'theme_url': String,
   'theme_author': String
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('theme', schema, 'themes');

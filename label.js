@@ -8,6 +8,8 @@ const schema = new mongoose.Schema({
   'deleted_at': { type: Number, default: null },
   'deleted_by': { type: mongoose.Schema.Types.ObjectId, ref: 'user', default: null },
   'label_name': String
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('label', schema, 'labels');

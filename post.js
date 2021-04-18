@@ -10,6 +10,8 @@ const schema = new mongoose.Schema({
   'post_title': String,
   'post_content': String,
   'post_status': String
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('post', schema, 'posts');

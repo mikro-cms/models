@@ -11,6 +11,8 @@ const schema = new mongoose.Schema({
   'user_username': String,
   'user_password': String,
   'role': { type: mongoose.Schema.Types.ObjectId, ref: 'role' }
+}, {
+  autoCreate: true
 });
 
 module.exports = mongoose.model('user', schema, 'users');
