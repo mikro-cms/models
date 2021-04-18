@@ -1,15 +1,7 @@
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const modelSession = require('./session');
 const modelRole = require('./role');
 const modelUser = require('./user');
-const modelTheme = require('./theme');
-const modelPage = require('./page');
-const modelPermission = require('./permission');
-const modelComponent = require('./component');
-const modelPostLabel = require('./post_label');
-const modelPost = require('./post');
-const modelLabel = require('./label');
 
 const schema = new mongoose.Schema({
   'migrate_status': Boolean
