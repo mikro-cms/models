@@ -8,4 +8,4 @@ const schema = new mongoose.Schema({
   autoCreate: true
 });
 
-module.exports = mongoose.model('permission', schema, 'permissions');
+module.exports = mongoose.model('page_permission', schema, 'page_permissions');

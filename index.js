@@ -4,7 +4,7 @@ module.exports = {
   'user': require('./user'),
   'theme': require('./theme'),
   'page': require('./page'),
-  'permission': require('./permission'),
+  'pagePermission': require('./page-permission'),
   'component': require('./component'),
   'post_label': require('./post_label'),
   'post': require('./post'),
