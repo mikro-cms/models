@@ -9,5 +9,7 @@ module.exports = {
   'postLabel': require('./post-label'),
   'post': require('./post'),
   'label': require('./label'),
-  'migration': require('./migration')
+  'migration': require('./migration'),
+  'api': require('./api'),
+  'apiPermission': require('./api-permission')
 };
