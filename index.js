@@ -6,7 +6,7 @@ module.exports = {
   'page': require('./page'),
   'pagePermission': require('./page-permission'),
   'component': require('./component'),
-  'post_label': require('./post_label'),
+  'postLabel': require('./post-label'),
   'post': require('./post'),
   'label': require('./label'),
   'migration': require('./migration')
