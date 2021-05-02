@@ -2,8 +2,9 @@ const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({
   'api': { type: mongoose.Types.ObjectId, ref: 'api' },
-  'role': { type: mongoose.Types.ObjectId, ref: 'role' },
-  'role_group': String
+  'role': { type: mongoose.Types.ObjectId, ref: 'role', default: null },
+  'role_group': String,
+  'api_resource': String
 }, {
   autoCreate: true
 });
