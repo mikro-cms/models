@@ -61,6 +61,13 @@ async function importRoles() {
 
   await imported.roleAdmin.save();
 
+  imported.userMember = new modelRole({
+    'role_name': 'member',
+    'role_group': 'member'
+  });
+
+  await imported.userMember.save();
+
   imported.roleGuest = new modelRole({
     'role_name': 'guest',
     'role_group': 'guest'
@@ -79,7 +86,7 @@ async function importUsers() {
     'user_email': 'admin@mikro.cms',
     'user_username': 'admin',
     'user_password': crypto.createHash('md5').update('admin').digest('hex'),
-    'role': imported.roleAdmin.role_id
+    'role': imported.roleAdmin._id
   });
 
   await imported.userAdmin.save();
