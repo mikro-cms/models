@@ -9,7 +9,8 @@ const schema = new mongoose.Schema({
   'deleted_by': { type: mongoose.Schema.Types.ObjectId, ref: 'user', default: null },
   'page_url': String,
   'page_title': String,
-  'theme': { type: mongoose.Schema.Types.ObjectId, ref: 'theme' }
+  'theme': { type: mongoose.Schema.Types.ObjectId, ref: 'theme' },
+  'variant': String
 }, {
   autoCreate: true
 });

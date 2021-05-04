@@ -10,7 +10,8 @@ const schema = new mongoose.Schema({
   'theme_options': String,
   'theme_view': String,
   'theme_public_path': String,
-  'theme_public_url': String
+  'theme_public_url': String,
+  'theme_components': Object
 }, {
   autoCreate: true
 });
