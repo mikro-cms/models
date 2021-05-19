@@ -83,6 +83,7 @@ async function importRoles() {
  */
 async function importUsers() {
   imported.userAdmin = new modelUser({
+    'user_fullname': 'Admin Mikro CMS',
     'user_email': 'admin@mikro.cms',
     'user_username': 'admin',
     'user_password': crypto.createHash('md5').update('admin').digest('hex'),

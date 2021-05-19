@@ -7,6 +7,7 @@ const schema = new mongoose.Schema({
   'updated_by': { type: mongoose.Schema.Types.ObjectId, ref: 'user', default: null },
   'deleted_at': { type: Number, default: null },
   'deleted_by': { type: mongoose.Schema.Types.ObjectId, ref: 'user', default: null },
+  'user_fullname': String,
   'user_email': String,
   'user_username': String,
   'user_password': String,
