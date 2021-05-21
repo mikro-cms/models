@@ -4,7 +4,8 @@ const schema = new mongoose.Schema({
   'api': { type: mongoose.Types.ObjectId, ref: 'api' },
   'role': { type: mongoose.Types.ObjectId, ref: 'role', default: null },
   'role_group': String,
-  'api_resource': String
+  'api_resource': String,
+  'api_method': String
 }, {
   autoCreate: true
 });
