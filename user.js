@@ -11,7 +11,8 @@ const schema = new mongoose.Schema({
   'user_email': String,
   'user_username': String,
   'user_password': String,
-  'role': { type: mongoose.Schema.Types.ObjectId, ref: 'role' }
+  'role': { type: mongoose.Schema.Types.ObjectId, ref: 'role' },
+  'last_login': { type: Number, default: null }
 }, {
   autoCreate: true
 });
