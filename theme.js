@@ -9,6 +9,7 @@ const schema = new mongoose.Schema({
   'theme_info': String,
   'theme_options': String,
   'theme_view': String,
+  'theme_customize': { type: String, default: null },
   'theme_public_path': String,
   'theme_public_url': String,
   'theme_components': Object
