@@ -9,7 +9,8 @@ const schema = new mongoose.Schema({
   'deleted_by': { type: mongoose.Schema.Types.ObjectId, ref: 'user', default: null },
   'post_title': String,
   'post_content': String,
-  'post_status': String
+  'post_status': String,
+  'post_options': { type: Object, default: null }
 }, {
   autoCreate: true
 });
