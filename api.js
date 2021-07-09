@@ -13,7 +13,8 @@ const schema = new mongoose.Schema({
   'api_url': String,
   'api_path': String,
   'api_info': String,
-  'api_path_options': String,
+  'api_options': String,
+  'api_locale': { type: String, default: null },
   'api_resource': String
 }, {
   autoCreate: true
