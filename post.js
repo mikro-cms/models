@@ -10,7 +10,7 @@ const schema = new mongoose.Schema({
   'post_title': String,
   'post_content': String,
   'post_status': String,
-  'post_options': { type: Object, default: null }
+  'post_options': { type: mongoose.Schema.Types.Mixed, default: null }
 }, {
   autoCreate: true
 });
