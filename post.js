@@ -10,7 +10,7 @@ const schema = new mongoose.Schema({
   'post_title': String,
   'post_content': String,
   'post_status': String,
-  'post_options': Object,
+  'post_options': { type: Object, default: {} },
   'label': { type: mongoose.Schema.Types.ObjectId, ref: 'label' }
 }, {
   autoCreate: true,
