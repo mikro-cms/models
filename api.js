@@ -15,9 +15,11 @@ const schema = new mongoose.Schema({
   'api_info': String,
   'api_options': String,
   'api_locale': { type: String, default: null },
-  'api_resource': String
+  'api_resource': String,
+  'api_upload': { type: Object, default: [] }
 }, {
-  autoCreate: true
+  autoCreate: true,
+  minimize: true
 });
 
 module.exports = mongoose.model('api', schema, 'apis');
