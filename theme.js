@@ -13,9 +13,10 @@ const schema = new mongoose.Schema({
   'theme_customize': { type: String, default: null },
   'theme_public_path': String,
   'theme_public_url': String,
-  'theme_components': Object
+  'theme_components': { type: Object, default: [] }
 }, {
-  autoCreate: true
+  autoCreate: true,
+  minimize: true
 });
 
 module.exports = mongoose.model('theme', schema, 'themes');
