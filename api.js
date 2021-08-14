@@ -19,7 +19,7 @@ const schema = new mongoose.Schema({
   'api_upload': { type: Object, default: [] }
 }, {
   autoCreate: true,
-  minimize: true
+  minimize: false
 });
 
 module.exports = mongoose.model('api', schema, 'apis');

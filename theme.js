@@ -16,7 +16,7 @@ const schema = new mongoose.Schema({
   'theme_components': { type: Object, default: [] }
 }, {
   autoCreate: true,
-  minimize: true
+  minimize: false
 });
 
 module.exports = mongoose.model('theme', schema, 'themes');
